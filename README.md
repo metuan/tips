@@ -16,6 +16,7 @@ const fillArray = (lengthOfArray, valueToFill) => Array(lengthOfArray).fill().ma
 ## js-string
 
 ```javascript
+/* Remove all whitespaces from the string (even those between characters) */
 const trimAllWhitespaces = (word) => word.replace(/\s/g,'');
 ```
 
