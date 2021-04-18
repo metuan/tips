@@ -89,6 +89,19 @@ const scanAllItemsFromDynamoDB = async (docClient, { tableName }) => {
 
 ```bash
 
+# Create a quickly Postgres DB
+psql -- postgres
+create database DATABASE_NAME;
+create user USERNAME with encrypted password 'USER_PASSWORD';
+grant all privileges on database DATABASE_NAME to USERNAME;
+
+# Integrate knex with the project
+knex init
+mkdir knex
+mkdir knex/migrations
+mkdir knex/seeds
+touch knex/index.js
+
 # Start a PostgreSQL server
 pg_ctl -D /usr/local/var/postgres start  
 
